@@ -29,3 +29,14 @@ lru_index = j;
 }
 }
 frame[lru_index] = page; 
+}
+faults++;
+}
+lastUsed[page] = i;
+cout << "Frames: ";
+for (int x : frame) cout << x << " ";
+cout << endl;
+}
+cout << "Total Page Faults: " << faults << endl;
+return 0;
+} 
