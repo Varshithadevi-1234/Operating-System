@@ -26,3 +26,11 @@ if (frame[j] == victim) frame[j] = page;
 }
 q.push(page);
 faults++;
+}
+cout << "Frames: ";
+for (int x : frame) cout << x << " ";
+cout << endl;
+}
+cout << "Total Page Faults: " << faults << endl;
+return 0;
+}
